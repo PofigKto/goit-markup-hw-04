@@ -29,8 +29,16 @@
                 </ul>
             </nav>
             <ul class="contacts-list list">
-                <li><a class="mail-link link" href="mailto">info@devstudio.com</a></li>
-                <li class="phone-number-list"><a href="tel:+380961111111" class="phone-number-link link">+38 096 111 11 11</a></li>
+                <li class="mail-list"><a class="mail-link link" href="mailto">
+                    <svg class="icon-contact">
+                        <use href="./images/sprite.svg.svg#icon-envelope"></use>
+                    </svg>
+                     info@devstudio.com</a></li>
+                <li class="phone-number-list"><a href="tel:+380961111111" class="phone-number-link link">
+                    <svg class="icon-contact">
+                        <use href="./images/sprite.svg.svg#icon-Vector"></use>
+                    </svg>
+                     +38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -38,7 +46,7 @@
         <section class="hero">
             <!--главный заголовок + кнопка-->
             <div class="container">
-                <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="main-title">Эффективные решения <br>для вашего бизнеса</h1>
                 <button type="button" class="modal modal-hero">Заказать услугу</button>
             </div>
                 
@@ -312,20 +320,23 @@
     <footer class="footer">
         <!--Contact information-->
         <div  class="container-footer container">
-            <a href="" class="logo-footer link">
+            <a href="" class="logo-footer-link link">
                 <span class="accent" lang="en">Web</span>Studio
             </a>
-            <ul class="footer-contacts-list list">
-                <li class="footer-item">
-                    <a href="https://goo.gl/maps/bgJPSbdSrHESArMN8" class="adress-link link">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="footer-item">
-                    <a href="mailto:" class="mail-link link">info@example.com</a>
-                </li>
-                <li class="footer-item">
-                    <a href="tel:+380991111111" class="phone-number-link link">+38 099 111 11 11</a>
-                </li>
-            </ul>
+            <address class="adress-footer">
+                <ul class="footer-contacts-list list">
+                    <li class="footer-item">
+                        <a href="https://goo.gl/maps/bgJPSbdSrHESArMN8" class="adress-link link">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="mailto:" class="mail-link link">info@example.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="tel:+380991111111" class="phone-number-link link">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+            
             <div class="social-media-footer">
                     <h2 class="join-title-footer">Присоединяйтесь</h2>
                     <ul class="footer-join-list list">

@@ -8,6 +8,7 @@
 --primary-text-color-theme-light: #757575;
 --accent-color: #2196F3;
 --aicon-background-color: #AFB1B8;
+--background-container-color: #F5F4FA;
 }
 
 .list {
@@ -71,6 +72,20 @@ body {
         letter-spacing: 0.02em;
         color: var(--primary-text-color-theme-light);
 }
+.mail-link:hover,
+.mail-link:focus {
+    color: var(--accent-color);
+}
+.mail-link:hover .icon-contact,
+.mail-link:focus .icon-contact {
+    fill: var(--accent-color);
+}
+.icon-contact {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--primary-text-color-theme-light);
+}
 .phone-number-link {
         font-weight: 500;
         font-size: 14px;
@@ -78,8 +93,22 @@ body {
         letter-spacing: 0.02em;
         color: var(--primary-text-color-theme-light)
 }
+.phone-number-link:hover,
+.phone-number-link:focus {
+    color: var(--accent-color);
+}
+.phone-number-link:hover .icon-contact,
+.phone-number-link:focus .icon-contact {
+    fill: var(--accent-color);
+}
+.phone-number-list {
+    margin-left: 50px;
+}
+.page-header {
+    border: 1px solid #ECECEC;
+}
 .main-title {
-    font-weight: 900;
+    font-weight: 700px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -159,20 +188,6 @@ body {
 .accent {
     color: var(--accent-color);
 }
-.logo-footer {
-    font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #FFFFFF; 
-}
-.footer-contacts-list {
-    margin-top: 20px;
-}
-.footer-item:not(:last-child) {
-    margin-bottom: 9px;
-}
 /*==================text styling portfolio=============*/
 .caption-portfolio {
         font-weight: 700;
@@ -191,10 +206,6 @@ body {
 /*====================Components====================*/
 .section {
     padding: 94px 0;
-}
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .work-section {
     padding-top: 0;
@@ -234,18 +245,12 @@ body {
     background-color: var(--accent-color);
     color: #ffffff;
 }
-.mail-link:hover,
-.mail-link:focus {
-    color: var(--accent-color);
-}
+
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
 }
-.phone-number-link:hover,
-.phone-number-link:focus {
-    color: var(--accent-color);
-}
+
 /* =============conteiners and flax studia=============*/
 .container {
     width: 1200px;
@@ -269,9 +274,7 @@ body {
     display: flex;
     margin-left: auto;
 }
-.phone-number-list{
-    margin-left: 50px;
-}
+
 .logo {
     margin-right: 93px;
 }
@@ -348,6 +351,9 @@ margin-right: 30px;
 }
 .icon-container {
     width: 270px;
+    background-color: var(--background-container-color);
+    margin-bottom: 30px;
+    padding: 25px 100px;
 }
 .icon {
     width: 70px;
@@ -421,10 +427,32 @@ margin-right: 30px;
 .clients-icon:focus {
     fill: var(--accent-color);
 }
-.icon_4 {
-    fill: var(--aicon-background-color);
+/*===========================Footer==============================*/
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container-footer {
+    display: flex;
+}
+.logo-footer-link {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.adress-footer {
+    margin-top: 20px;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 /*===========================social icon footer==================================*/
+.social-media-footer {
+    margin-left: 70px;
+}
 .join-title-footer {
 font-weight: 700;
 font-size: 14px;
@@ -437,6 +465,7 @@ margin-bottom: 20px;
 .icon-media-footer {
     width: 20px;
     height: 20px;
+    fill: #FFFFFF;
 }
 .footer-join-list {
     display: flex;
@@ -457,4 +486,5 @@ margin-bottom: 20px;
 .media-link-footer:focus {
     background-color: #2196F3;
 }
+
 
